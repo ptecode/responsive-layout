@@ -1,0 +1,406 @@
+
+/* =================================
+  Base Styles 320px
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2,
+.name,
+.bottom-name,
+.main-nav li,
+.footer-nav li,
+.back-to-top {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 1.7em;
+    color: #2e8b57;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.wrapper {
+    width: 93%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding: 1em 0 2em;
+}
+
+.about {
+    padding-bottom: 2em;
+}
+
+section {
+    margin-bottom: 2.5em;
+}
+
+#contact {
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+header,
+.about,
+#contact,
+footer {
+    background: #2e8b57;
+}
+
+
+/* ---- Navigation ---- */
+
+.name {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    color: #ffd700;
+}
+
+.main-nav li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background: #fff;
+    border: 3px solid #ffd700;
+}
+
+.main-nav a {
+    display: block;
+    padding: .5em .75em;
+    color: #2e8b57;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+        background: #ffd700;
+    }
+
+
+/* ---- About section ---- */
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    background: #ffdab9;
+    margin: 1em auto;
+}
+
+.intro {
+    margin-top: 0;
+    color: #ffd700;
+}
+
+.title {
+    display: none;
+}
+
+
+/* ---- Portfolio section ---- */
+
+.project-list li {
+    margin-bottom: 2em;
+}
+
+
+/* ---- Skills section ---- */
+
+#skills {
+    margin-bottom: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #f0ffff;
+}
+
+.skills-list li {
+    display: inline-block;
+    width: 27%;
+    margin-right: 5%;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-radius: 5%;
+    font-size: 0.9em;
+    font-weight: 500;
+    background: rgb(168, 69, 255);
+    border: 2px solid rgb(168, 69, 255);
+    color: #fff;
+    transition: .4s;
+}
+
+.skills-list li:nth-child(even) {
+    background: rgb(5, 221, 238);
+    border: 2px solid rgb(5, 221, 238);
+}
+
+.skills-list li:hover {
+    background: #f0ffff;
+    color: rgb(168, 69, 255);
+}
+
+.skills-list li:nth-child(even):hover {
+    background: #f0ffff;
+    color: rgb(5, 221, 238);
+}
+
+
+/* ---- Contact section ---- */
+
+.contact h2,
+.contact p,
+.contact li,
+span a {
+    color: #ffd700;
+}
+
+.contact h2 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.contact p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.contact span {
+    font-weight: 500;
+    padding-left: 1em;
+}
+
+span:hover,
+span a:hover {
+    color: #f5deb3;
+}
+
+
+/* ---- Footer ---- */
+
+.footer-nav {
+    display: none;
+}
+
+.bottom-name,
+.back-to-top {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #ffd700;
+    font-weight: 700;
+}
+
+.bottom-name {
+    font-size: 1.3em;
+    float: left;
+}
+
+.back-to-top {
+    float: right;
+    padding: 0.25em;
+    font-size: 1.1em;
+}
+
+.back-to-top:hover,
+.footer-nav a:hover {
+    border-bottom: 2px solid #ffd700;
+}
+
+footer .wrapper {
+    border-top: 1px solid #f5deb3;
+}
+
+
+
+/* =================================
+  Media Queries 768px
+==================================== */
+
+
+@media (min-width: 768px) {
+
+    .wrapper {
+        width: 80%;
+    }
+
+    /* ---- Navigation ---- */
+
+    .name,
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .main-nav li {
+       margin-right: 0.5em;
+    }
+
+    .main-nav a {
+        padding: .25em .5em;
+    }
+
+
+    /* ---- About section ---- */
+
+    .img-container {
+        width: 40%;
+        float: right;
+    }
+
+    .intro {
+        width: 60%;
+        text-align: left;
+        padding-top: 2%;
+        padding-right: 5%;
+        padding-left: 2.5%;
+    }
+
+
+    /* ---- Portfolio section ---- */
+
+    .project-list li {
+       display: inline-block;
+       width: 50%;
+       margin-right: -4px;
+       padding-left: 1em;
+       padding-right: 1em;
+       vertical-align: top;
+    }
+
+
+    /* ---- Skills section ---- */
+
+    .skills-list li {
+        width: 20%;
+        font-size: 1em;
+    }
+
+
+    /* ---- Contact section ---- */
+
+    .contact {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+
+    /* ---- Footer ---- */
+
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-nav {
+        display: initial;
+        float: right;
+    }
+
+    .footer-nav li {
+        float: left;
+        margin-left: 1em;
+        margin-top: 10%;
+    }
+
+    .footer-nav a {
+        display: block;
+        padding: 0.25em;
+        color: #ffd700;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+}
+
+
+
+/* =================================
+  Media Queries 1024px
+==================================== */
+
+@media (min-width: 1024px) {
+
+    /* ---- Navigation ---- */
+
+    .main-nav {
+        display: inline-block;
+        float: right;
+    }
+
+    .name {
+        float: left;
+    }
+
+    /* ---- About section ---- */
+
+    .intro {
+        padding-top: 2.5%;
+    }
+
+    .profile-image {
+        width: 225px;
+        height: 225px;
+    }
+
+    /* ---- Portfolio section ---- */
+
+    .project-list li {
+        width: 33.33%;
+    }
+
+    /* ---- Skills section ---- */
+
+    .skills-list li {
+        width: 12%;
+    }
+
+    /* ---- Contact section ---- */
+
+    .contact {
+        width: 50%;
+    }
+
+    /* ---- Footer ---- */
+
+    .bottom-name {
+        margin-top: 4%;
+    }
+
+}
